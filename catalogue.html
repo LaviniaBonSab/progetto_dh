@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena 101</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css/styles.css">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+ 
+
+ <!-- STYLE -->
+ <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+ </style>
+</head>
+
+<body>
+    <!-- Content goes here -->
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">ARENA 101</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Catalogo opere</a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Altro
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Linea del tempo</a>
+                    <a class="dropdown-item" href="#"></a>
+                    <a class="dropdown-item" href="#">Links utili</a>
+                </div>
+            </li>
+        </ul>
+        <!-- Search tool -->
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+
+<!-- CATALOGO ITEMS -->
+<div>
+ <h1>Catalogo</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Autore del libretto</th>
+                <th>Data</th>
+                <th>Musica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><a href="Aida.html">AIDA</a></td>
+                <td>Antonio Ghislanzoni</td>
+                <td>1871</td>
+                <td>Giuseppe Verdi</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CARMEN</td>
+                <td>Henri Meilhac, Ludovic Halévy</td>
+                <td>1875</td>
+                <td>Georges Bizet</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>LA BOHEME</td>
+                <td>Giuseppe Giacosa, Luigi Illica</td>
+                <td>1896</td>
+                <td>Giacomo Puccini</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>IL BARBIERE DI SIVIGLIA</td>
+                <td>Cesare Sterbini</td>
+                <td>1816</td>
+                <td>Gioachino Rossini</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>TOSCA</td>
+                <td>Giacomo Puccini</td>
+                <td>1900</td>
+                <td>Giacomo Puccini</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>TURANDOT</td>
+                <td>Giuseppe Adami, Renato Simoni</td>
+                <td>1926</td>
+                <td>Giacomo Puccini</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="bg-light text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+      <div class="credits">
+          ARENA 101 è un progetto sviluppato per il corso "Digital Humanities" (a.a. 2021/2022) del corso di laurea magistrale in Filologia Classica dell'Università Alma Mater Studiorum di Bologna
+        </div>
+    
+        <small>Designed by Lavinia Bonfatti Sabbioni</small>
+    
+    
+    </div>
+  </div>
+  <div class="text-center p-3 bg-dark text-white">
+    &copy; 2024 Arena 101. La trascrizione dei libretti è stata fatta dall'autrice a partire dai libretti di <a href="https://www.operalibretto.com/en/home-eng/" target="_blank">Opera Libretto</a>. Informazioni di tipo generale (metadati descrittivi) provengono dal sito di <a href="https://www.arena.it/" target="_blank">Fondazione Arena</a>.
+  </div>
+</footer>

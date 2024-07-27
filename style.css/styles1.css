@@ -1,0 +1,78 @@
+/* L'asterisco si riferisce a tutti gli elementi HTML, ovvero tutti i selettori del CSS. 
+Il box-sizing Serve a settare la struttura generale della pagina */
+* {
+  box-sizing: border-box;
+}
+
+/* Propietà del BODY: tipologia di font e colore di sfondo; */
+body {
+  font-family: "Georgia";
+  background-color: #f1faee;
+}
+
+
+
+/* Stile NAVBAR*/
+.navbar {
+    background-color: #1d3557 !important; 
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-toggler-icon, {
+    color: white !important; /* Set the text color to white for better contrast */
+}
+
+/* Dropdown menu styles */
+.navbar .dropdown-menu {
+    background-color: #1d3557; /* Match the navbar background */
+}
+
+.navbar .dropdown-item {
+    color: white !important; /* Set the text color to white */
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    background-color: #457b9d; /* Change the background on hover */
+    color: white !important; /* Ensure the text remains white */
+}
+
+/* Style the search button to match the navbar theme */
+.navbar .btn-outline-success {
+    color: white !important;
+    border-color: white !important;
+}
+
+.navbar .btn-outline-success:hover {
+    color: #1d3557 !important;
+    background-color: white !important;
+    border-color: white !important;
+}
+
+
+
+/* Proprietà dell'UL della navbar: elimino i punti dell'elenco 
+e stabilisco l'occupazione della lista dentro al box di contenimento */
+nav ul {
+  list-style-type: none;
+  width: 60%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Proprietà dei link A della navbar. Elimino la sottolineatura.
+Essendo A elemento inline, con block lo trasformo */
+nav li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Proprietà dell'hover per i link della navbar (effetti sul link al passaggio del mouse) */
+nav li a:hover {
+  background-color: #457b9d;
+  color: white;
+}

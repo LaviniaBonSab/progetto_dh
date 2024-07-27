@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena 101</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css/styles.css">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+
+  <!-- HERO IMAGE STYLE -->
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Georgia, serif;
+}
+
+.hero-image {
+    background-image: url('img/Aida2.jpg');
+    height: 65vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0d1b2a;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #1d3557;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #457b9d;
+}
+
+</style>
+
+<!-- FLEXBOX STYLE -->
+<style>
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+
+</head>
+
+<!-- START BODY HERE -->
+<body>
+    <!-- Content goes here -->
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">ARENA 101</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Catalogo opere</a>
+            </li>
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Altro
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Linea del tempo</a>
+                    <a class="dropdown-item" href="#"></a>
+                    <a class="dropdown-item" href="#">Links utili</a>
+                </div>
+            </li>
+        </ul>
+        <!-- Search tool -->
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+<!-- HERO IMAGE -->
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>AIDA</h1>
+    <p>Giuseppe Verdi</p>
+    <button>Leggi</button>
+  </div>
+</div>
+
+<div class="content">
+<main>
+<!-- LISTA METADATI GENERALI SOTTOFORMA DI TABELLA-->
+ <div>
+    <h2><i class="bi bi-arrow-right-circle-fill"></i>Metadati Descrittivi</h2>
+    <table>
+       <tr>
+            <th>
+              <h5>Autore del libretto</h5>
+            </th>
+            <td>Antonio Ghislanzoni</td>
+       </tr>
+        <tr>
+        <tr>
+            <th>
+              <h5>Musica di</h5>
+            </th>
+            <td>Giuseppe Verdi</td>
+          </tr>
+        <tr>
+        <tr>
+            <th>
+              <h5>Prima rappresentazione</h5>
+            </th>
+            <td>24 dicembre 1871, Teatro chediviale dell’Opera, Il Cairo.</td>
+          </tr>
+        <tr>
+        <tr>
+            <th>
+              <h5>Prima rappresentazione italiana</h5>
+            </th>
+            <td>8 febbraio 1872 Teatro alla Scala, Milano.</td>
+          </tr>
+        <tr>
+    </table> 
+</div>
+</br>
+
+<div>
+    <table>
+     <tr>
+        <th>
+          <h5>Lingua</h5>
+        </th>
+          <td>Italiano</td>
+       </tr>
+       <tr>
+            <th>
+              <h5>Tipo di spettacolo</h5>
+            </th>
+            <td>Opera</td>
+       </tr>
+       <tr>
+            <th>
+              <h5>Durata</h5>
+            </th>
+            <td>Ca. 3h, incluso un intervallo</td>
+       </tr>
+       <tr>
+            <th>
+              <h5>Struttura</h5>
+            </th>
+            <td>Opera in quattro atti</td>
+       </tr>
+    </table>
+</div>
+</br>
+
+<!-- FILES -->
+<div>
+<h2><i class="bi bi-arrow-down-circle-fill"></i>Downloads</h2>
+<p><i class="bi bi-filetype-xml"></i>Qui trovi il file <a href="metadati.xml">XML/DC</a></p>
+</div>
+<br/>
+
+
+
+<!-- TRAMA OPERA-->
+<div>
+    <h2><i class="bi bi-card-checklist"></i>Trama</h2>
+    <p>Aida, figlia del re d'Etiopia, viene fatta prigioniera durante una guerra contro gli Egizi. Essi la portano in Egitto come schiava, ma lì nessuno ne conosce la vera identità. Durante la schiavitù ella si innamora del comandante delle truppe egiziane Radames che ricambia il suo amore.</p>
+</div>
+<br/>
+
+
+
+<!-- TESTO DEL LIBRETTO -->
+<div>
+    <h2><i class="bi bi-book"></i>Libretto</h2>
+    
+     <p><em>Radamès &#8211; Ramfis<br />
+</em>[Introduzione &#8211; Scena]</p>
+<p>RAMFIS<br />
+Sì: corre voce che l&#8217;Etiope ardisca<br />
+sfidarci ancora, e del Nilo la valle<br />
+e Tebe minacciar. ~ Fra breve un messo<br />
+recherà il ver.</p>
+<p>RADAMÈS<br />
+La sacra<br />
+Iside consultasti?</p>
+<p>RAMFIS<br />
+Ella ha nomato<br />
+delle egizie falangi<br />
+il condottier supremo.</p>
+<p>RADAMÈS<br />
+Oh lui felice!</p>
+<p>RAMFIS<br />
+<em>(con intenzione, fissando Radamès)<br />
+</em>Giovane e prode è desso. ~ Ora del nume<br />
+reco i decreti al Re.<br />
+<em>(esce)<br />
+</em><em>(solo)</em></p>
+<p>RADAMÈS<br />
+Se quel guerriero<br />
+io fossi! se il mio sogno<br />
+si avverasse!&#8230; Un esercito di prodi<br />
+da me guidato&#8230; e la vittoria&#8230; e il plauso<br />
+di Menfi tutta! ~ E a te, mia dolce Aida,<br />
+tornar di lauri cinto&#8230;<br />
+dirti: per te ho pugnato e per te ho vinto!<br />
+[Romanza]<br />
+Celeste Aida, forma divina,<br />
+mistico serto di luce e fior;<br />
+del mio pensiero tu sei regina,<br />
+tu di mia vita sei lo splendor.<br />
+Il tuo bel cielo vorrei ridarti,<br />
+le dolci brezze del patrio suol;<br />
+un regal serto sul crin posarti,<br />
+ergerti un trono vicino al sol.</p>
+<p><em>Amneris e detto.<br />
+</em>[Duetto]<span id="more-2021"></span></p>
+<p>AMNERIS<br />
+Quale insolita gioia<br />
+nel tuo sguardo! Di quale<br />
+nobil fierezza ti balena il volto!<br />
+Degna di invidia oh! quanto<br />
+saria la donna il cui bramato aspetto<br />
+tanta luce di gaudio in te destasse!</p>
+<p>RADAMÈS<br />
+D&#8217;un sogno avventuroso<br />
+si beava il mio cuore ~ Oggi, la diva<br />
+profferse il nome del guerrier che al campo<br />
+le schiere egizie condurrà&#8230; S&#8217;io fossi<br />
+a tale onor prescelto&#8230;</p>
+<p>AMNERIS<br />
+Né un altro sogno mai<br />
+più gentil&#8230; più soave&#8230;<br />
+al cuore ti parlò?&#8230; Non hai tu in Menfi<br />
+desiderii&#8230; speranze?&#8230;</p>
+<p>RADAMÈS<br />
+Io!&#8230; (Quale inchiesta!)</p>
+<p>RADAMÈS<br />
+(Forse&#8230; l&#8217;arcano amore<br />
+scoprì che m&#8217;arde in core&#8230;<br />
+Della sua schiava il nome<br />
+mi lesse nel pensier!)</p>
+<p>AMNERIS<br />
+(Oh! Guai se un altro amore<br />
+ardesse a lui nel core!&#8230;<br />
+Guai se il mio sguardo penetra<br />
+questo fatal mister!)</p>
+<p><em>Aida e detti.<br />
+</em>[Terzetto]</p>
+<p>RADAMÈS<br />
+<em>(vedendo Aida)<br />
+</em>Dessa!</p>
+<p>AMNERIS<br />
+(Ei si turba&#8230; e quale<br />
+sguardo rivolse a lei!<br />
+Aida!&#8230; a me rivale&#8230;<br />
+forse saria costei?)</p>
+<p>AMNERIS<br />
+<em>(dopo breve silenzio, volgendosi ad Aida)<br />
+</em>Vieni, o diletta, appressati&#8230;<br />
+schiava non sei né ancella<br />
+qui dove in dolce fascino<br />
+io ti chiamai sorella&#8230;<br />
+Piangi?&#8230; delle tue lacrime<br />
+svela il segreto a me.</p>
+<p>AIDA<br />
+Ohimè! di guerra fremere<br />
+l&#8217;atroce grido io sento&#8230;<br />
+per la infelice patria,<br />
+per me&#8230; per voi pavento.</p>
+<p>AMNERIS<br />
+Favelli il ver? né s&#8217;agita<br />
+più grave cura in te?<br />
+<em>(Aida abbassa gli occhi e cerca di dissimulare il proprio turbamento)</em></p>
+<p>AMNERIS<br />
+<em>(guardando Aida)<br />
+</em>(Trema, o rea schiava, ah! trema<br />
+ch&#8217;io nel tuo cor discenda!&#8230;<br />
+trema che il ver mi apprenda<br />
+quel pianto e quel rossor!)</p>
+<p>AIDA<br />
+(No, sull&#8217;afflitta patria<br />
+non geme il cor soltanto;<br />
+quello ch&#8217;io verso è pianto<br />
+di sventurato amor.)</p>
+<p>RADAMÈS<br />
+<em>(guardando Amneris)<br />
+</em>(Nel volto a lei balena<br />
+lo sdegno ed il sospetto&#8230;<br />
+guai se l&#8217;arcano affetto<br />
+a noi leggesse in cor!)<br />
+[Scena e pezzo d&#8217;assieme]</p>
+<p><em>Il Re, preceduto dalle sue Guardie e seguìto da Ramfis, dai Ministri, Sacerdoti, Capitani, ecc., ecc. Un Uffiziale di palazzo, indi un Messaggiero.</em></p>
+<p>RE<br />
+Alta cagion vi aduna,<br />
+o fidi egizii, al vostro re d&#8217;intorno.<br />
+Dal confin d&#8217;Etiópia un messaggiero<br />
+dianzi giungea &#8211; gravi novelle ei reca&#8230;<br />
+vi piaccia udirlo&#8230;<br />
+<em>(ad un uffiziale)<br />
+</em>Il messaggier si avanzi!</p>
+<p>MESSAGGIERO<br />
+Il sacro suolo dell&#8217;Egitto è invaso<br />
+dai barbari Etiópi ~ i nostri campi<br />
+fur devastati&#8230; arse le messi&#8230; e baldi<br />
+della facil vittoria i predatori<br />
+già marciano su Tebe&#8230;</p>
+<p>TUTTI<br />
+Ed osan tanto!</p>
+<p>MESSAGGIERO<br />
+Un guerriero indomabile, feroce,<br />
+li conduce ~ Amonasro.</p>
+<p>TUTTI<br />
+Il re!</p>
+<p>AIDA<br />
+(Mio padre!)</p>
+<p>MESSAGGIERO<br />
+Già Tebe è in armi e dalle cento porte<br />
+sul barbaro invasore<br />
+proromperà, guerra recando e morte.</p>
+<p>RE<br />
+Sì: guerra e morte il nostro grido sia.</p>
+<p>TUTTI<br />
+Guerra! guerra!</p>
+<p>RE<br />
+Tremenda, inesorata&#8230;<br />
+<em>(accostandosi a Radamès)<br />
+</em>Iside venerata<br />
+di nostre schiere invitte<br />
+già designava il condottier supremo.<br />
+Radamès.</p>
+<p>TUTTI<br />
+Radamès!</p>
+<p>RADAMÈS<br />
+Sien grazie ai numi!<br />
+I miei voti fur paghi.</p>
+<p>AMNERIS<br />
+(Ei duce!)</p>
+<p>AIDA<br />
+(Io tremo.)</p>
+<p>RE<br />
+Or, di Vulcano al tempio<br />
+muovi o guerrier ~ le sacre<br />
+armi ti cingi e alla vittoria vola.<br />
+Su! del Nilo al sacro lido<br />
+accorrete, egizii eroi;<br />
+da ogni cor prorompa il grido:<br />
+guerra e morte allo stranier!</p>
+<p>RAMFIS E SACERDOTI<br />
+Gloria ai numi! ognun rammenti<br />
+ch&#8217;essi reggono gli eventi ~<br />
+che in poter dei numi solo<br />
+stan le sorti dei guerrier.</p>
+<p>MINISTRI E CAPITANI<br />
+Su! del Nilo al sacro lido<br />
+sien barriera i nostri petti;<br />
+non echeggi che un sol grido:<br />
+guerra e morte allo stranier!</p>
+<p>RADAMÈS<br />
+Sacro fremito di gloria<br />
+tutta l&#8217;anima mi investe ~<br />
+su! corriamo alla vittoria!<br />
+Guerra e morte allo stranier!</p>
+<p>AMNERIS<br />
+<em>(recando una bandiera e consegnandola a Radamès)<br />
+</em>Di mia man ricevi, o duce,<br />
+il vessillo glorioso;<br />
+ti sia guida, ti sia luce<br />
+della gloria sul sentier.</p>
+<p>AIDA<br />
+(Per chi piango! per chi prego?&#8230;<br />
+deggio amarlo, e veggo in lui<br />
+un nemico&#8230; uno stranier!)</p>
+<p>TUTTI<br />
+Guerra! Guerra! Sterminio all&#8217;invasor!<br />
+Va&#8217;, Radamès, ritorna vincitor!</p>
+<p><em>Escono tutti meno Aida.<br />
+</em>[Scena]</p>
+<p>AIDA<br />
+Ritorna vincitor!&#8230; E dal mio labbro<br />
+uscì l&#8217;empia parola! ~ Vincitore<br />
+del padre mio&#8230; di lui che impugna l&#8217;armi<br />
+per me&#8230; per ridonarmi<br />
+una patria, una reggia! e il nome illustre<br />
+che qui celar mi è forza. ~ Vincitore<br />
+de&#8217; miei fratelli&#8230; ond&#8217;io lo vegga, tinto<br />
+del sangue amato, trionfar nel plauso<br />
+dell&#8217;egizie coorti!&#8230; e dietro il carro,<br />
+un re&#8230; mio padre&#8230; di catene avvinto!&#8230;<br />
+L&#8217;insana parola<br />
+o numi sperdete!<br />
+Al seno d&#8217;un padre<br />
+la figlia rendete:<br />
+struggete le squadre<br />
+dei nostri oppressor!<br />
+Sventurata! che dissi?&#8230; e l&#8217;amor mio?&#8230;<br />
+dunque scordar poss&#8217;io<br />
+questo fervido amor che oppressa e schiava<br />
+come raggio di sol qui mi beava?<br />
+Imprecherò la morte<br />
+a Radamès&#8230; a lui che amo pur tanto!<br />
+Ah! non fu in terra mai<br />
+da più crudeli angoscie un core affranto.<br />
+I sacri nomi di padre&#8230; di amante<br />
+né profferir poss&#8217;io, né ricordar&#8230;<br />
+per l&#8217;un&#8230; per l&#8217;altro&#8230; confusa&#8230; tremante&#8230;<br />
+io piangere vorrei&#8230; vorrei pregar.<br />
+Ma la mia prece in bestemmia si muta&#8230;<br />
+delitto è il pianto a me&#8230; colpa il sospir&#8230;<br />
+in notte cupa la mente è perduta&#8230;<br />
+e nell&#8217;ansia crudel vorrei morir.<br />
+Numi, pietà ~ del mio soffrir!<br />
+Speme non v&#8217;ha ~ pe &#8216;l mio dolor&#8230;<br />
+amor fatal ~ tremendo amor<br />
+spezzami il cor ~ fammi morir!<br />
+<em>(esce)</em></p>
+<p>&nbsp;</p>
+<p><strong>Interno di tempio di Vulcano a Menfi.<br />
+</strong><em>Una luce misteriosa scende dall&#8217;alto.</em><em><br />
+</em><em>Una lunga fila di colonne, l&#8217;una a l&#8217;altra addossate, si perde fra le tenebre. Statue di varie divinità. Nel mezzo della scena, sovra un palco coperto da tappeti, sorge l&#8217;altare sormontato da emblemi sacri. Dai tripodi d&#8217;oro si innalza il fumo degli incensi.</em><em><br />
+</em><em>Sacerdoti e Sacerdotesse &#8211; Ramfis ai piedi dell&#8217;altare &#8211; A suo tempo, Radamès &#8211; Si sente dall&#8217;interno il canto delle Sacerdotesse accompagnato dalle arpe.<br />
+</em>[Gran scena della consacrazione e Finale I]</p>
+<p>SACERDOTESSE<br />
+<em>(dall&#8217;interno)<br />
+</em>Immenso Fthà, del mondo<br />
+spirito animator,<br />
+noi ti invochiamo!<br />
+Immenso Fthà, del mondo<br />
+spirto fecondator,<br />
+noi ti invochiamo!<br />
+Fuoco increato, eterno,<br />
+onde ebbe luce il sol,<br />
+noi ti invochiamo!</p>
+<p>SACERDOTI<br />
+Tu che dal nulla hai tratto<br />
+l&#8217;onde, la terra e il ciel,<br />
+noi ti invochiamo!<br />
+Nume che del tuo spirito<br />
+sei figlio e genitor,<br />
+noi ti invochiamo!<br />
+Vita dell&#8217;universo<br />
+mito di eterno amor,<br />
+noi ti invochiamo!</p>
+<p><em>Radamès viene introdotto senz&#8217;armi. Mentre va all&#8217;altare, le Sacerdotesse eseguiscono la danza sacra.<br />
+Sul capo di Radamès vien steso un velo d&#8217;argento.</em></p>
+<p>RAMFIS<br />
+Mortal, diletto ai numi. ~ A te fidate<br />
+son d&#8217;Egitto le sorti. ~ Il sacro brando<br />
+dal dio temprato, per tua man diventi<br />
+ai nemici terror, folgore, morte.<br />
+<em>(volgendosi al nume)<br />
+</em>Nume, custode e vindice<br />
+di questa sacra terra,<br />
+la mano tua distendi<br />
+sovra l&#8217;egizio suol.</p>
+<p>RADAMÈS<br />
+Nume, che duce ed arbitro<br />
+sei d&#8217;ogni umana guerra,<br />
+proteggi tu, difendi<br />
+d&#8217;Egitto il sacro suol!<br />
+<em>Mentre Radamès viene investito delle armi sacre, le Sacerdotesse ed i Sacerdoti riprendono l&#8217;inno religioso e la mitica danza.</em></p>
+<p>&nbsp;</p>
+<p><strong>Atto secondo<br />
+</strong>[Preludio]<br />
+<strong>Una sala nell&#8217;appartamento di Amneris.<br />
+</strong><em>Amneris circondata dalle Schiave che l&#8217;abbigliano per la festa trionfale. Dai tripodi si eleva il profumo degli aromi. Giovani Schiavi mori danzando agitano i ventagli di piume.<br />
+</em>[Introduzione &#8211; Scena, coro di donne e danza degli schiavi mori]</p>
+<p>SCHIAVE<br />
+Chi mai fra gli inni e i plausi<br />
+erge alla gloria il vol,<br />
+al par di un dio terribile,<br />
+fulgente al par del sol?<br />
+Vieni: sul crin ti piovano<br />
+contesti ai lauri i fior;<br />
+suonin di gloria i cantici<br />
+coi cantici d&#8217;amor.</p>
+<p>AMNERIS<br />
+(Vieni, amor mio, mi inebria&#8230;<br />
+fammi beato il cor!)</p>
+<p>SCHIAVE<br />
+Or, dove son le barbare<br />
+orde dello stranier?<br />
+Siccome nebbia sparvero<br />
+al soffio del guerrier.<br />
+Vieni: di gloria il premio<br />
+raccogli, o vincitor;<br />
+t&#8217;arrise la vittoria,<br />
+t&#8217;arriderà l&#8217;amor.</p>
+<p>AMNERIS<br />
+(Vieni, amor mio, ravvivami<br />
+d&#8217;un caro accento ancor!)<br />
+Silenzio! Aida verso noi si avanza&#8230;<br />
+figlia dei vinti, il suo dolor mi è sacro.<br />
+<em>(ad un cenno di Amneris tutti si allontanano)<br />
+</em>Nel rivederla, il dubbio<br />
+atroce in me si desta&#8230;<br />
+il mistero fatal si squarci alfine!</p>
+<p><em>Amneris e Aida.<br />
+</em>[Scena e duetto]</p>
+<p>AMNERIS<br />
+<em>(con simulata amorevolezza)<br />
+</em>Fu la sorte dell&#8217;armi a&#8217; tuoi funesta,<br />
+povera Aida! ~ Il lutto<br />
+che ti pesa sul cor teco divido.<br />
+Io son l&#8217;amica tua&#8230;<br />
+tutto da me tu avrai ~ vivrai felice!</p>
+<p>AIDA<br />
+Felice esser poss&#8217;io<br />
+lungi dal suol natio&#8230; qui dove ignota<br />
+m&#8217;è la sorte del padre e dei fratelli?&#8230;</p>
+<p>AMNERIS<br />
+Ben ti compiango! pure hanno un confine<br />
+i mali di quaggiù&#8230; Sanerà il tempo<br />
+le angoscie del tuo core&#8230;<br />
+e più che il tempo, un dio possente&#8230; amore.</p>
+<p>AIDA<br />
+<em>(vivamente commossa)<br />
+</em>(Amore! Amore! ~ gaudio&#8230; tormento&#8230;<br />
+soave ebbrezza ~ ansia crudel&#8230;<br />
+ne&#8217; tuoi dolori ~ la vita io sento&#8230;<br />
+un tuo sorriso ~ mi schiude il ciel.)</p>
+<p>AMNERIS<br />
+<em>(guardando Aida fissamente)<br />
+</em>(Ah! quel pallore&#8230; ~ quel turbamento<br />
+svelan l&#8217;arcana ~ febbre d&#8217;amor&#8230;<br />
+d&#8217;interrogarla ~ quasi ho sgomento&#8230;<br />
+divido l&#8217;ansie ~ del suo terror.)<br />
+Ebben: qual nuovo fremito<br />
+ti assal, gentile Aida?<br />
+I tuoi segreti svelami,<br />
+all&#8217;amor mio ti affida&#8230;<br />
+Tra i forti che pugnarono<br />
+della tua patria a danno&#8230;<br />
+qualcuno&#8230; un dolce affanno&#8230;<br />
+forse&#8230; a te in cor destò&#8230;</p>
+<p>AIDA<br />
+Che parli?&#8230;</p>
+<p>AMNERIS<br />
+A tutti barbara<br />
+non si mostrò la sorte&#8230;<br />
+se in campo il duce impavido<br />
+cadde trafitto a morte&#8230;</p>
+<p>AIDA<br />
+Che mai dicesti! ahi misera!&#8230;</p>
+<p>AMNERIS<br />
+Sì&#8230; Radamès da&#8217; tuoi<br />
+fu spento&#8230; e pianger puoi?&#8230;</p>
+<p>AIDA<br />
+Per sempre io piangerò!</p>
+<p>AMNERIS<br />
+Gli dèi t&#8217;han vendicata&#8230;</p>
+<p>AIDA<br />
+Avversi sempre<br />
+mi furo i numi&#8230;</p>
+<p>AMNERIS<br />
+<em>(prorompendo con ira)<br />
+</em>Ah! trema! in cor ti lessi&#8230;<br />
+tu l&#8217;ami&#8230;</p>
+<p>AIDA<br />
+Io!&#8230;</p>
+<p>AMNERIS<br />
+Non mentire!&#8230;<br />
+(Un detto ancora e il vero<br />
+saprò&#8230;) Fissami in volto&#8230;<br />
+io t&#8217;ingannava&#8230; Radamès&#8230; vive&#8230;</p>
+<p>AIDA<br />
+<em>(con esaltazione)<br />
+</em>Vive!<br />
+<em>(inginocchiandosi)<br />
+</em>Ah grazie, o numi!</p>
+<p>AMNERIS<br />
+E ancor mentir tu speri?&#8230;<br />
+Sì&#8230; tu l&#8217;ami&#8230;<br />
+<em>(nel massimo furore)<br />
+</em>Ma l&#8217;amo<br />
+anch&#8217;io&#8230; intendi tu?&#8230; son tua rivale&#8230;<br />
+figlia de&#8217; faraoni&#8230;</p>
+<p>AIDA<br />
+Mia rivale!&#8230;<br />
+<em>(con orgoglio, alzandosi)<br />
+</em>ebben sia pure&#8230; anch&#8217;io&#8230;<br />
+son tal&#8230;<br />
+<em>(reprimendosi)<br />
+</em>Che dissi mai?&#8230; pietà! Perdono!<br />
+Pietà ti prenda del mio dolore&#8230;<br />
+è vero&#8230; io l&#8217;amo d&#8217;immenso amore&#8230;<br />
+tu sei felice&#8230; tu sei possente&#8230;<br />
+io vivo solo per questo amor.</p>
+<p>AMNERIS<br />
+Trema, o vil schiava! spezza il tuo core&#8230;<br />
+segnar tua morte può questo amore&#8230;<br />
+del tuo destino arbitra io sono.<br />
+D&#8217;odio e vendetta le furie ho in cor.<br />
+<em>(suoni interni)<br />
+</em>Alla pompa che si appresta,<br />
+meco, o schiava, assisterai;<br />
+tu prostrata nella polvere,<br />
+io sul trono, accanto al re.<br />
+Vien&#8230; mi segui&#8230; e apprenderai<br />
+se lottar tu puoi con me.</p>
+<p>AIDA<br />
+Ah! pietà!&#8230; che più mi resta?<br />
+Un deserto è la mia vita:<br />
+vivi e regna, il tuo furore<br />
+io fra breve placherò.<br />
+Questo amore che ti irrita<br />
+nella tomba porterò.</p>
+<p><strong>Uno degli ingressi della città di Tebe.<br />
+</strong><em>Sul davanti un gruppo di palme. A destra il tempio di Ammone &#8211; a sinistra un trono sormontato da un baldacchino di porpora.</em><em><br />
+</em><em>Nel fondo una porta trionfale.</em><em><br />
+</em><em>La scena è ingombra di Popolo.</em><em><br />
+</em><em>Entra il Re, seguìto dai Ministri, Sacerdoti, Capitani, Flabelliferi, Porta insegne, ecc., ecc. Quindi, Amneris con Aida e Schiave &#8211; Il Re va a sedere sul trono. Amneris prende posto alla sinistra del Re.<br />
+</em>[Gran Finale II]</p>
+<p>POPOLO<br />
+Gloria all&#8217;Egitto e ad Iside<br />
+che il sacro suol protegge;<br />
+al re che il delta regge<br />
+inni festosi alziam!<br />
+Vieni, o guerriero vindice,<br />
+vieni a gioir con noi;<br />
+sul passo degli eroi<br />
+i lauri e i fior versiam!</p>
+<p>DONNE<br />
+S&#8217;intrecci il loto al lauro<br />
+sul crin dei vincitori;<br />
+nembo gentil di fiori<br />
+stenda sull&#8217;armi un vel.<br />
+Danziam, fanciulle egizie,<br />
+le mistiche carole<br />
+come d&#8217;intorno al sole<br />
+danzano gli astri in ciel!</p>
+<p>SACERDOTI<br />
+Della vittoria agli arbitri<br />
+supremi il guardo ergete;<br />
+grazie agli dèi rendete<br />
+nel fortunato dì.<br />
+Così per noi di gloria<br />
+sia l&#8217;avvenir segnato,<br />
+né mai ci colga il fato<br />
+che i barbari colpì.</p>
+<p><em>Le Truppe egizie precedute dalle fanfare sfilano dinanzi al Re.<br />
+Seguono i carri di guerra, le insegne, i vasi sacri, le statue degli dèi.<br />
+Un drappello di Danzatrici che recano i tesori dei vinti, da ultimo, Radamès, sotto un baldacchino portato da dodici Uffiziali.</em></p>
+<p>RE<br />
+<em>(che scende dal trono per abbracciare Radamès)<br />
+</em>Salvator della patria, io ti saluto.<br />
+Vieni, e mia figlia di sua man ti porga<br />
+il serto trionfale.<br />
+<em>(Radamès si inchina davanti Amneris che gli porge la corona)<br />
+</em>Ora, a me chiedi<br />
+quanto più brami. Nulla a te negato<br />
+sarà in tal dì ~ lo giuro<br />
+per la corona mia, pei sacri numi.</p>
+<p>RADAMÈS<br />
+Concedi in pria che innanzi a te sien tratti<br />
+i prigionier&#8230;<br />
+<em>(entrano fra le guardie i prigionieri etiopi, ultimo Amonasro, vestito da uffiziale)</em></p>
+<p>AIDA<br />
+Che veggo!&#8230; Egli!&#8230; mio padre!</p>
+<p>TUTTI<br />
+Suo padre!</p>
+<p>AMNERIS<br />
+In poter nostro!&#8230;</p>
+<p>AIDA<br />
+<em>(abbracciando il padre)<br />
+</em>Tu! Prigionier!</p>
+<p>AMONASRO<br />
+<em>(piano ad Aida)<br />
+</em>Non mi tradir!</p>
+<p>RE<br />
+Ti appressa&#8230;<br />
+dunque&#8230; tu sei?&#8230;</p>
+<p>AMONASRO<br />
+Suo padre. ~ Anch&#8217;io pugnai&#8230;<br />
+vinti noi fummo&#8230; morte invan cercai.<br />
+<em>(accennando alla divisa che lo veste)<br />
+</em>Questa assisa ch&#8217;io vesto vi dica<br />
+che il mio re, la mia patria ho difeso;<br />
+fu la sorte a nostr&#8217;armi nemica&#8230;<br />
+tornò vano dei forti l&#8217;ardir.<br />
+Al mio piè nella polve disteso<br />
+giacque il re da più colpi trafitto;<br />
+se l&#8217;amor della patria è delitto<br />
+siam rei tutti, siam pronti a morir!<br />
+<em>(volgendosi al re con accento supplichevole)<br />
+</em>Ma tu, o re, tu signore possente,<br />
+a costoro ti volgi clemente&#8230;<br />
+oggi noi siam percossi dal fato,<br />
+doman voi potria il fato colpir.</p>
+<p>AIDA, PRIGIONIERI E SCHIAVE<br />
+Sì: dai numi percossi noi siamo;<br />
+tua pietà, tua clemenza imploriamo;<br />
+ah! giammai di soffrir vi sia dato<br />
+ciò che in oggi n&#8217;è dato soffrir!</p>
+<p>RAMFIS E SACERDOTI<br />
+Struggi, o re, queste ciurme feroci,<br />
+chiudi il core alle perfide voci.<br />
+Fur dai numi votati alla morte,<br />
+si compisca dei numi il voler!</p>
+<p>POPOLO<br />
+Sacerdoti, gli sdegni placate,<br />
+l&#8217;umil prece dei vinti ascoltate;<br />
+e tu, o re, tu possente, tu forte,<br />
+a clemenza dischiudi il pensier.</p>
+<p>RADAMÈS<br />
+<em>(fissando Aida)<br />
+</em>(Il dolor che in quel volto favella<br />
+al mio sguardo la rende più bella;<br />
+ogni stilla del pianto adorato<br />
+nel mio petto ravviva l&#8217;amor.)</p>
+<p>AMNERIS<br />
+(Quali sguardi sovr&#8217;essa ha rivolti!<br />
+Di qual fiamma balenano i volti!<br />
+E a tal sorte serbata son io?&#8230;<br />
+la vendetta mi rugge nel cor.)</p>
+<p>RE<br />
+Or che fausti ne arridon gli eventi<br />
+a costoro mostriamci clementi<br />
+la pietà sale ai numi gradita<br />
+e rafferma dei prenci il poter.</p>
+<p>RADAMÈS<br />
+O re: pei sacri numi,<br />
+per lo splendore della tua corona,<br />
+compier giurasti il voto mio&#8230;</p>
+<p>RE<br />
+Giurai.</p>
+<p>RADAMÈS<br />
+Ebbene: a te pei prigionieri etiopi<br />
+vita domando e libertà.</p>
+<p>AMNERIS<br />
+(Per tutti!)</p>
+<p>SACERDOTI<br />
+Morte ai nemici della patria!</p>
+<p>POPOLO<br />
+Grazie<br />
+per gli infelici!</p>
+<p>RAMFIS<br />
+Ascolta, o re ~<br />
+<em>(a Radamès)<br />
+</em>tu pure<br />
+giovine eroe, saggio consiglio ascolta:<br />
+Son nemici e prodi sono&#8230;<br />
+la vendetta hanno nel cor,<br />
+fatti audaci dal perdono<br />
+correranno all&#8217;armi ancor!</p>
+<p>RADAMÈS<br />
+Spento Amonasro il re guerrier, non resta<br />
+speranza ai vinti.</p>
+<p>RAMFIS<br />
+Almeno,<br />
+arra di pace e securtà, fra noi<br />
+resti col padre Aida&#8230;</p>
+<p>RE<br />
+Al tuo consiglio io cedo.<br />
+Di securtà, di pace un miglior pegno<br />
+or io vuò darvi. ~ Radamès, la patria<br />
+tutto a te deve. ~ D&#8217;Amneris la mano<br />
+premio ti sia. Sovra l&#8217;Egitto un giorno<br />
+con essa regnerai&#8230;</p>
+<p>AMNERIS<br />
+(Venga la schiava,<br />
+venga a rapirmi l&#8217;amor mio&#8230; se l&#8217;osa!)</p>
+<p>RE<br />
+Gloria all&#8217;Egitto, ad Iside<br />
+che il sacro suol difende,<br />
+s&#8217;intrecci il loto al lauro<br />
+sul crin del vincitor!</p>
+<p>SACERDOTI<br />
+Inni leviamo ad Iside<br />
+che il sacro suol difende!<br />
+Preghiam che i fati arridano<br />
+fausti alla patria ognor.</p>
+<p>AIDA<br />
+(Qual speme omai più restami?<br />
+A lui la gloria, il trono,<br />
+a me l&#8217;oblio&#8230; le lacrime<br />
+d&#8217;un disperato amor.)</p>
+<p>RADAMÈS<br />
+(D&#8217;avverso nume il folgore<br />
+sul capo mio discende&#8230;<br />
+ah no! d&#8217;Egitto il soglio<br />
+non val d&#8217;Aida il cor.)</p>
+<p>AMNERIS<br />
+(Dall&#8217;inatteso giubilo<br />
+inebriata io sono;<br />
+tutti in un dì si compiono<br />
+i sogni del mio cor.)</p>
+<p>AMONASRO<br />
+<em>(ad Aida)<br />
+</em>Fa&#8217; cor: della tua patria<br />
+i lieti eventi aspetta;<br />
+per noi della vendetta<br />
+già prossimo è l&#8217;albor.</p>
+<p>POPOLO<br />
+Gloria all&#8217;Egitto, ad Iside<br />
+che il sacro suol difende!<br />
+S&#8217;intrecci il loto al lauro<br />
+sul crin del vincitor!</p>
+<p><strong>Atto terzo</strong></p>
+<p>&nbsp;</p>
+<p><strong>Le rive del Nilo.<br />
+</strong><em>Roccie di granito fra cui crescono dei palmizii. Sul vertice delle roccie il tempio d&#8217;Iside per metà nascosto tra le fronde.</em><em><br />
+</em><em>È notte stellata. Splendore di luna.<br />
+</em>[Introduzione &#8211; Preghiera-coro e romanza]</p>
+<p>SACERDOTESSE E SACERDOTI<br />
+<em>(nel tempio)<br />
+</em>O tu che sei d&#8217;Osiride<br />
+madre immortale e sposa,<br />
+diva che i casti palpiti<br />
+desti agli umani in cor;<br />
+soccorri a noi pietosa,<br />
+madre d&#8217;eterno amor.<br />
+<em>Da una barca che approda alla riva, discendono Amneris, Ramfis, alcune Donne coperte da fitto velo e Guardie.</em></p>
+<p>RAMFIS<br />
+<em>(ad Amneris)<br />
+</em>Vieni d&#8217;Iside al tempio ~ alla vigilia<br />
+delle tue nozze, invoca<br />
+della diva il favore. ~ Iside legge<br />
+dei mortali nel cuore ~ ogni mistero<br />
+degli umani a lei è noto.</p>
+<p>AMNERIS<br />
+Sì; io pregherò che Radamès mi doni<br />
+tutto il suo cor, come il mio core a lui<br />
+sacro è per sempre&#8230;</p>
+<p>RAMFIS<br />
+Andiamo.<br />
+Pregherai fino all&#8217;alba; io sarò teco.</p>
+<p><em>Tutti entrano nel tempio. Il coro ripete il canto sacro.<br />
+</em><em>(entra cautamente coperta da un velo)</em></p>
+<p>AIDA<br />
+~ Qui Radamès verrà&#8230; Che vorrà dirmi?<br />
+Io tremo&#8230; Ah! se tu vieni<br />
+a recarmi, o crudel, l&#8217;ultimo addio,<br />
+del Nilo i cupi vortici<br />
+mi daran tomba&#8230; e pace forse&#8230; e oblio.<br />
+O patria mia, mai più ti rivedrò!<br />
+O cieli azzurri&#8230; o dolci aure native,<br />
+dove sereno il mio mattin brillò&#8230;<br />
+o verdi colli&#8230; o profumate rive&#8230;<br />
+o patria mia, mai più ti rivedrò!<br />
+O fresche valli&#8230; o queto asil beato<br />
+che un dì promesso dall&#8217;amor mi fu&#8230;<br />
+or che d&#8217;amore il sogno è dileguato&#8230;<br />
+o patria mia, non ti vedrò mai più!</p>
+<p><em>Amonasro e Aida.<br />
+</em>[Duetto]</p>
+<p>AIDA<br />
+Cielo! mio padre!</p>
+<p>AMONASRO<br />
+A te grave cagione<br />
+mi adduce, Aida. Nulla sfugge al mio<br />
+sguardo. ~ D&#8217;amor ti struggi<br />
+per Radamès&#8230; ei t&#8217;ama&#8230; qui lo attendi.<br />
+Dei faraon la figlia è tua rivale&#8230;<br />
+razza infame, aborrita e a noi fatale!</p>
+<p>AIDA<br />
+E in suo potere io sto!&#8230; io, d&#8217;Amonasro<br />
+figlia!&#8230;</p>
+<p>AMONASRO<br />
+In poter di lei! No!&#8230; se lo brami<br />
+la possente rival tu vincerai,<br />
+e patria, e trono, e amor, tutto tu avrai.<br />
+Rivedrai le foreste imbalsamate,<br />
+le fresche valli, i nostri tempii d&#8217;or.</p>
+<p>AIDA<br />
+Rivedrò le foreste imbalsamate,<br />
+le fresche valli, i nostri tempii d&#8217;or.</p>
+<p>AMONASRO<br />
+Sposa felice a lui che amasti tanto,<br />
+tripudii immensi ivi potrai gioir.</p>
+<p>AIDA<br />
+Un giorno solo di sì dolce incanto&#8230;<br />
+un&#8217;ora di tal gioia&#8230; e poi morir!</p>
+<p>AMONASRO<br />
+Pur rammenti che a noi l&#8217;egizio immite,<br />
+le case, i tempii, e l&#8217;are profanò&#8230;<br />
+trasse in ceppi le vergini rapite&#8230;<br />
+madri&#8230; vecchi, fanciulli ei trucidò.</p>
+<p>AIDA<br />
+Ah! ben rammento quegli infausti giorni!<br />
+Rammento i lutti che il mio cor soffrì&#8230;<br />
+deh! fate o numi che per noi ritorni<br />
+l&#8217;alba invocata dei sereni dì.</p>
+<p>AMONASRO<br />
+Non fia che tardi ~ In armi ora si desta<br />
+il popol nostro ~ tutto pronto è già.<br />
+Vittoria avrem&#8230; Solo a saper mi resta<br />
+qual sentier il nemico seguirà.</p>
+<p>AIDA<br />
+Chi scoprirlo potria? chi mai?</p>
+<p>AMONASRO<br />
+Tu stessa!</p>
+<p>AIDA<br />
+Io!&#8230;</p>
+<p>AMONASRO<br />
+Radamès so che qui attendi&#8230; ei t&#8217;ama&#8230;<br />
+ei conduce gli egizii&#8230; Intendi?&#8230;</p>
+<p>AIDA<br />
+Orrore!<br />
+Che mi consigli tu? No! no! giammai!</p>
+<p>AMONASRO<br />
+<em>(con impeto selvaggio)<br />
+</em>Su, dunque! sorgete,<br />
+egizie coorti!<br />
+Col fuoco struggete<br />
+le nostre città&#8230;<br />
+spargete il terrore,<br />
+le stragi, le morti&#8230;<br />
+al vostro furore<br />
+più freno non v&#8217;ha.</p>
+<p>AIDA<br />
+Ah padre!&#8230;</p>
+<p>AMONASRO<br />
+Mia figlia<br />
+ti chiami!&#8230;</p>
+<p>AIDA<br />
+Pietà!</p>
+<p>AMONASRO<br />
+Flutti di sangue scorrono<br />
+sulle città dei vinti&#8230;<br />
+vedi?&#8230; dai negri vortici<br />
+si levano gli estinti&#8230;<br />
+ti additan essi e gridano:<br />
+per te la patria muor!</p>
+<p>AIDA<br />
+Pietà!&#8230;</p>
+<p>AMONASRO<br />
+Una larva orribile<br />
+fra l&#8217;ombre a noi s&#8217;affaccia&#8230;<br />
+trema! le scarne braccia<br />
+sul capo tuo levò&#8230;<br />
+Tua madre ell&#8217;è&#8230; ravvisala&#8230;<br />
+ti maledice&#8230;</p>
+<p>AIDA<br />
+Ah no!&#8230;<br />
+Padre&#8230;</p>
+<p>AMONASRO<br />
+Non sei mia figlia&#8230;<br />
+dei faraoni tu sei la schiava.</p>
+<p>AIDA<br />
+Padre, a costoro schiava io non sono&#8230;<br />
+non maledirmi&#8230; non imprecarmi&#8230;<br />
+ancor tua figlia potrai chiamarmi&#8230;<br />
+della mia patria degna sarò.</p>
+<p>AMONASRO<br />
+Pensa che un popolo, vinto, straziato,<br />
+per te soltanto risorger può&#8230;</p>
+<p>AIDA<br />
+O patria! o patria&#8230; quanto mi costi!</p>
+<p>AMONASRO<br />
+Coraggio! ei giunge&#8230; là tutto udrò&#8230;<br />
+<em>(si nasconde fra i palmizii)</em></p>
+<p>&nbsp;</p>
+<p><em>Radamès e Aida.<br />
+</em>[Duetto]</p>
+<p>RADAMÈS<br />
+Pur ti riveggo, mia dolce Aida&#8230;</p>
+<p>AIDA<br />
+Ti arresta, vanne&#8230; che speri ancor?</p>
+<p>RADAMÈS<br />
+A te d&#8217;appresso l&#8217;amor mi guida.</p>
+<p>AIDA<br />
+Te i riti attendono d&#8217;un altro amor.<br />
+D&#8217;Amneris sposo&#8230;</p>
+<p>RADAMÈS<br />
+Che parli mai?&#8230;<br />
+Te sola, Aida, te deggio amar.<br />
+Gli dèi mi ascoltano, tu mia sarai&#8230;</p>
+<p>AIDA<br />
+D&#8217;uno spergiuro non ti macchiar!<br />
+Prode t&#8217;amai, non t&#8217;amerei spergiuro.</p>
+<p>RADAMÈS<br />
+Dell&#8217;amor mio dubiti, Aida?</p>
+<p>AIDA<br />
+E come<br />
+speri sottrarti d&#8217;Amneris ai vezzi,<br />
+del re al voler, del tuo popolo ai voti,<br />
+dei sacerdoti all&#8217;ira?</p>
+<p>RADAMÈS<br />
+Odimi, Aida.<br />
+Nel fiero anelito di nuova guerra<br />
+il suolo etiope si ridestò&#8230;<br />
+i tuoi già invadono la nostra terra,<br />
+io degli egizii duce sarò.<br />
+Fra il suon, fra i plausi della vittoria,<br />
+al re mi prostro, gli svelo il cor&#8230;<br />
+sarai tu il serto della mia gloria,<br />
+vivrem beati d&#8217;eterno amor.</p>
+<p>AIDA<br />
+Né d&#8217;Amneris paventi<br />
+il vindice furor? La sua vendetta,<br />
+come folgor tremenda<br />
+cadrà su me, sul padre mio, su tutti.</p>
+<p>RADAMÈS<br />
+Io vi difendo.</p>
+<p>AIDA<br />
+Invan! tu no &#8216;l potresti&#8230;<br />
+pur&#8230; se tu m&#8217;ami&#8230; ancor s&#8217;apre una via<br />
+di scampo a noi&#8230;</p>
+<p>RADAMÈS<br />
+Quale?</p>
+<p>AIDA<br />
+Fuggir&#8230;</p>
+<p>RADAMÈS<br />
+Fuggire!</p>
+<p>AIDA<br />
+<em>(colla più viva espansione)<br />
+</em>Fuggiam gli ardori inospiti<br />
+di queste lande ignude;<br />
+una novella patria<br />
+al nostro amor si schiude&#8230;<br />
+Là&#8230; tra foreste vergini,<br />
+di fiori profumate,<br />
+in estasi beate<br />
+la terra scorderem.</p>
+<p>RADAMÈS<br />
+Sovra una terra estrania<br />
+teco fuggir dovrei!<br />
+Abbandonar la patria,<br />
+l&#8217;are de&#8217; nostri dèi!<br />
+Il suol dov&#8217;io raccolsi<br />
+di gloria i primi allori,<br />
+il ciel dei nostri amori<br />
+come scordar potrem?</p>
+<p>AIDA<br />
+Sotto il mio ciel, più libero<br />
+l&#8217;amor ne fia concesso;<br />
+ivi nel tempio istesso<br />
+gli stessi numi avrem.</p>
+<p>RADAMÈS<br />
+<em>(esitante)<br />
+</em>Aida!</p>
+<p>AIDA<br />
+Tu non m&#8217;ami&#8230; Va&#8217;! ~</p>
+<p>RADAMÈS<br />
+Non t&#8217;amo!<br />
+Mortal giammai né dio<br />
+arse d&#8217;amor al par del mio possente.</p>
+<p>AIDA<br />
+Va&#8217;&#8230; va&#8217;&#8230; ti attende all&#8217;ara<br />
+Amneris&#8230;</p>
+<p>RADAMÈS<br />
+No!&#8230; giammai!&#8230;</p>
+<p>AIDA<br />
+Giammai, dicesti?<br />
+Allor piombi la scure<br />
+su me, sul padre mio&#8230;</p>
+<p>RADAMÈS<br />
+Ah no! fuggiamo!<br />
+<em>(con appassionata risoluzione)<br />
+</em>Sì, fuggiam da queste mura,<br />
+al deserto insiem fuggiamo;<br />
+qui sol regna la sventura,<br />
+là si schiude un ciel d&#8217;amor.<br />
+I deserti interminati<br />
+a noi talamo saranno,<br />
+su noi gli astri brilleranno<br />
+d&#8217;un insolito fulgor.</p>
+<p>AIDA<br />
+Nella terra avventurata<br />
+de&#8217; miei padri, il ciel ne attende;<br />
+ivi l&#8217;aura è imbalsamata,<br />
+ivi il suolo è aromi e fior.<br />
+Fresche valli e verdi prati<br />
+a noi talamo saranno,<br />
+su noi gli astri brilleranno<br />
+d&#8217;un insolito fulgor.</p>
+<p>AIDA E RADAMÈS<br />
+Vieni meco ~ insiem fuggiamo<br />
+questa terra di dolor ~<br />
+vieni meco ~ io t&#8217;amo, io t&#8217;amo!<br />
+A noi duce fia l&#8217;amor.<br />
+<em>(si allontanano rapidamente)<br />
+(arrestandosi all&#8217;improvviso)</em></p>
+<p>AIDA<br />
+Ma dimmi: per qual via<br />
+eviterem le schiere<br />
+degli armati?</p>
+<p>RADAMÈS<br />
+Il sentier scelto dai nostri<br />
+a piombar sul nemico fia deserto<br />
+fino a domani&#8230;</p>
+<p>AIDA<br />
+E quel sentier?</p>
+<p>RADAMÈS<br />
+Le gole<br />
+di Nàpata&#8230;</p>
+<p><em>Amonasro, Aida e Radamès.<br />
+</em>[Scena &#8211; Finale III]</p>
+<p>AMONASRO<br />
+Di Nàpata le gole!<br />
+Ivi saranno i miei&#8230;</p>
+<p>RADAMÈS<br />
+Oh! chi ci ascolta?</p>
+<p>AMONASRO<br />
+D&#8217;Aida il padre e degli Etiopi il re.</p>
+<p>RADAMÈS<br />
+<em>(agitatissimo)<br />
+</em>Tu! Amonasro!&#8230; tu il re? Numi! che dissi?<br />
+No!&#8230; non è ver!&#8230; no!&#8230; sogno&#8230; delirio è questo&#8230;</p>
+<p>AIDA<br />
+Ah no! ti calma&#8230; ascoltami,<br />
+all&#8217;amor mio t&#8217;affida.</p>
+<p>AMONASRO<br />
+A te l&#8217;amor d&#8217;Aida<br />
+un soglio innalzerà.</p>
+<p>RADAMÈS<br />
+Io son disonorato&#8230;<br />
+per te tradii la patria!</p>
+<p>AMONASRO<br />
+No: tu non sei colpevole ~<br />
+era voler del fato&#8230;<br />
+vieni: oltre il Nil ne attendono<br />
+i prodi a noi devoti,<br />
+là del tuo core i voti<br />
+coronerà l&#8217;amor.</p>
+<p><em>Amneris dal tempio, indi Ramfis, Sacerdoti, Guardie e detti.</em></p>
+<p>AMNERIS<br />
+Traditor!</p>
+<p>AIDA<br />
+La mia rivale!&#8230;</p>
+<p>AMONASRO<br />
+<em>(avventandosi su Amneris con un pugnale)<br />
+</em>L&#8217;opra mia a strugger vieni!<br />
+Muori!&#8230;</p>
+<p>RADAMÈS<br />
+<em>(frapponendosi)<br />
+</em>Arresta, insano!&#8230;</p>
+<p>AMONASRO<br />
+Oh rabbia!</p>
+<p>RAMFIS<br />
+Guardie, olà!</p>
+<p>RADAMÈS<br />
+<em>(ad Aida ed Amonasro)<br />
+</em>Presto&#8230; fuggite&#8230;</p>
+<p>AMONASRO<br />
+<em>(trascinando Aida)<br />
+</em>Vieni, o figlia!</p>
+<p>RAMFIS<br />
+<em>(alle guardie)<br />
+</em>Li inseguite!</p>
+<p>RADAMÈS<br />
+<em>(a Ramfis)<br />
+</em>Sacerdote, io resto a te.</p>
+<p><strong>Atto quarto</strong></p>
+<p>&nbsp;</p>
+<p><strong>Sala nel palazzo del re.<br />
+</strong><em>Alla sinistra, una gran porta che mette alla sala sotterranea delle sentenze.</em><em><br />
+</em><em>Andito a destra che conduce alla prigione di Radamès.</em><em><br />
+</em><em>Amneris.<br />
+</em>[Scena e duetto]<br />
+<em>(mestamente appoggiata davanti la porta del sotterraneo)<br />
+</em>L&#8217;aborrita rivale a me sfuggia&#8230;<br />
+dai sacerdoti Radamès attende<br />
+dei traditor la pena. ~ Traditore<br />
+egli non è&#8230; pur rivelò di guerra<br />
+l&#8217;alto segreto&#8230; egli fuggir volea&#8230;<br />
+con lei fuggire&#8230; Traditori tutti!<br />
+A morte! a morte!&#8230; Oh! che mai parlo? io l&#8217;amo&#8230;<br />
+Io l&#8217;amo sempre&#8230; Disperato, insano<br />
+è quest&#8217;amor che la mia vita strugge.<br />
+Oh! s&#8217;ei potesse amarmi!<br />
+Vorrei salvarlo&#8230; e come?<br />
+Si tenti!&#8230; Guardie: Radamès qui venga.</p>
+<p><em>Radamès (condotto dalle Guardie) e Amneris.</em></p>
+<p>AMNERIS<br />
+Già i sacerdoti adunansi<br />
+arbitri del tuo fato;<br />
+pur dell&#8217;accusa orribile<br />
+scolparti ancor ti è dato;<br />
+ti scolpa, e la tua grazia<br />
+io pregherò dal trono,<br />
+e nunzia di perdono,<br />
+di vita, a te sarò.</p>
+<p>RADAMÈS<br />
+Di mie discolpe i giudici<br />
+mai non udran l&#8217;accento;<br />
+dinanzi ai numi e agli uomini,<br />
+né vil, né reo mi sento.<br />
+Profferse il labbro incauto<br />
+fatal segreto, è vero,<br />
+ma puro il mio pensiero<br />
+e l&#8217;onor mio restò.</p>
+<p>AMNERIS<br />
+Salvati dunque e scolpati.</p>
+<p>RADAMÈS<br />
+No.</p>
+<p>AMNERIS<br />
+Tu morrai&#8230;</p>
+<p>RADAMÈS<br />
+La vita<br />
+aborro; d&#8217;ogni gaudio<br />
+la fonte inaridita,<br />
+svanita ogni speranza,<br />
+sol bramo di morir.</p>
+<p>AMNERIS<br />
+Morire!&#8230; ah!&#8230; tu déi vivere!&#8230;<br />
+sì, all&#8217;amor mio vivrai;<br />
+per te le angosce orribili<br />
+di morte io già provai;<br />
+t&#8217;amai&#8230; soffersi tanto&#8230;<br />
+vegliai le notti in pianto&#8230;<br />
+e patria, e trono, e vita<br />
+tutto darei per te.</p>
+<p>RADAMÈS<br />
+Per essa anch&#8217;io la patria<br />
+e l&#8217;onor mio tradiva&#8230;</p>
+<p>AMNERIS<br />
+Di lei non più!&#8230;</p>
+<p>RADAMÈS<br />
+L&#8217;infamia<br />
+mi attende e vuoi che io viva?&#8230;<br />
+Misero appien mi festi,<br />
+Aida a me togliesti,<br />
+spenta l&#8217;hai forse&#8230; e in dono<br />
+offri la vita a me?</p>
+<p>AMNERIS<br />
+Io&#8230; di sua morte origine!<br />
+No!&#8230; vive Aida&#8230;</p>
+<p>RADAMÈS<br />
+Vive!</p>
+<p>AMNERIS<br />
+Nei disperati aneliti<br />
+dell&#8217;orde fuggitive<br />
+sol cadde il padre&#8230;</p>
+<p>RADAMÈS<br />
+Ed ella?&#8230;</p>
+<p>AMNERIS<br />
+Sparve, né più novella<br />
+s&#8217;ebbe&#8230;</p>
+<p>RADAMÈS<br />
+Gli dèi l&#8217;adducano<br />
+salva alle patrie mura,<br />
+e ignori la sventura<br />
+di chi per lei morrà!</p>
+<p>AMNERIS<br />
+Ma, s&#8217;io ti salvo, giurami<br />
+che più non la vedrai&#8230;</p>
+<p>RADAMÈS<br />
+No &#8216;l posso!&#8230;</p>
+<p>AMNERIS<br />
+A lei rinunzia<br />
+per sempre&#8230; e tu vivrai!&#8230;</p>
+<p>RADAMÈS<br />
+No &#8216;l posso!&#8230;</p>
+<p>AMNERIS<br />
+Ancor una volta:<br />
+a lei rinunzia&#8230;</p>
+<p>RADAMÈS<br />
+È vano&#8230;</p>
+<p>AMNERIS<br />
+Morir vuoi dunque, insano?</p>
+<p>RADAMÈS<br />
+Pronto a morir son già.</p>
+<p>AMNERIS<br />
+Chi ti salva, o sciagurato,<br />
+dalla sorte che ti aspetta?<br />
+In furore hai tu cangiato<br />
+un amor che ugual non ha.<br />
+De&#8217; miei pianti la vendetta<br />
+or dal ciel si compirà.</p>
+<p>RADAMÈS<br />
+È la morte un ben supremo<br />
+se per lei morir m&#8217;è dato;<br />
+nel subir l&#8217;estremo fato<br />
+gaudii immensi il core avrà;<br />
+l&#8217;ira umana più non temo,<br />
+temo sol la tua pietà.</p>
+<p><em>Radamès parte circondato dalle Guardie.<br />
+</em>[Scena del giudizio]</p>
+<p>AMNERIS<br />
+Ohimè!&#8230; morir mi sento&#8230; Oh! chi lo salva?<br />
+E in poter di costoro<br />
+io stessa lo gettai!&#8230; ora, a te impreco,<br />
+atroce gelosia, che la sua morte<br />
+e il lutto eterno del mio cor segnasti!<br />
+<em>(si volge e vede i sacerdoti che attraversano la scena per entrare nel sotterraneo)<br />
+</em>Che veggo! Ecco i fatali,<br />
+gli inesorati ministri di morte&#8230;<br />
+oh! ch&#8217;io non vegga quelle bianche larve!<br />
+<em>(si copre il volto colle mani)</em></p>
+<p>SACERDOTI<br />
+<em>(nel sotterraneo)<br />
+</em>Spirito del nume, sovra noi discendi!<br />
+Ne avviva al raggio dell&#8217;eterna luce;<br />
+pe &#8216;l labbro nostro tua giustizia apprendi.</p>
+<p>AMNERIS<br />
+Numi, pietà del mio straziato core&#8230;<br />
+egli è innocente, lo salvate, o numi!<br />
+Disperato, tremendo è il mio dolore!</p>
+<p><em>Radamès fra le Guardie attraversa la scena e scende nel sotterraneo.<br />
+Amneris, al vederlo, mette un grido.</em></p>
+<p>RAMFIS<br />
+<em>(nel sotterraneo)<br />
+</em>Radamès! ~ Radamès: tu rivelasti<br />
+della patria i segreti allo straniero&#8230;</p>
+<p>SACERDOTI<br />
+Discolpati!</p>
+<p>RAMFIS<br />
+Egli tace&#8230;</p>
+<p>TUTTI<br />
+Traditor!</p>
+<p>RAMFIS<br />
+Radamès! ~ Radamès: tu disertasti<br />
+dal campo il dì che precedea la pugna.</p>
+<p>SACERDOTI<br />
+Discolpati!</p>
+<p>RAMFIS<br />
+Egli tace&#8230;</p>
+<p>TUTTI<br />
+Traditor!</p>
+<p>RAMFIS<br />
+Radamès! ~ Radamès: tua fé violasti,<br />
+alla patria spergiuro, al re, all&#8217;onor.</p>
+<p>SACERDOTI<br />
+Discolpati!</p>
+<p>RAMFIS<br />
+Egli tace&#8230;</p>
+<p>TUTTI<br />
+Traditor!<br />
+Radamès, è deciso il tuo fato;<br />
+degli infami la morte tu avrai;<br />
+sotto l&#8217;ara del nume sdegnato<br />
+a te vivo fia schiuso l&#8217;avel.</p>
+<p>AMNERIS<br />
+A lui vivo&#8230; la tomba&#8230; oh, gli infami!<br />
+Né di sangue son paghi giammai&#8230;<br />
+e si chiaman ministri del ciel!<br />
+<em>(investendo i sacerdoti che escono dal sotterraneo)<br />
+</em>Sacerdoti: compiste un delitto&#8230;<br />
+tigri infami di sangue assetate,<br />
+voi la terra ed i numi oltraggiate&#8230;<br />
+voi punite chi colpe non ha.</p>
+<p>SACERDOTI<br />
+È traditor! morrà.</p>
+<p>AMNERIS<br />
+<em>(a Ramfis)<br />
+</em>Sacerdote: quest&#8217;uomo che uccidi,<br />
+tu lo sai, da me un giorno fu amato&#8230;<br />
+l&#8217;anatema d&#8217;un core straziato<br />
+col suo sangue su te ricadrà!</p>
+<p>SACERDOTI<br />
+È traditor! Morrà.<br />
+<em>(si allontanano lentamente)</em></p>
+<p>AMNERIS<br />
+Empia razza! Anatema su voi!<br />
+La vendetta del ciel scenderà!<br />
+<em>(esce disperata)</em></p>
+<p>&nbsp;</p>
+<p><strong>L&#8217;interno del tempio di Vulcano e la tomba di Radamès.<br />
+</strong><em>La scena è divisa in due piani. Il piano superiore rappresenta l&#8217;interno del tempio di Vulcano splendente d&#8217;oro e di luce: il piano inferiore un sotterraneo. Lunghe file d&#8217;arcate si perdono nell&#8217;oscurità. Statue colossali d&#8217;Osiride colle mani incrociate sostengono i pilastri della volta.</em><em><br />
+</em><em>Radamès è nel sotterraneo sui gradini della scala, per cui è disceso.</em><em><br />
+</em><em>Al di sopra, due Sacerdoti intenti a chiudere la pietra del sotterraneo.<br />
+</em>[Scena e duetto &#8211; Finale ultimo]</p>
+<p>RADAMÈS<br />
+La fatal pietra sovra me si chiuse&#8230;<br />
+ecco la tomba mia. ~ Del dì la luce<br />
+più non vedrò&#8230; non rivedrò più Aida.<br />
+~ Aida, ove sei tu? Possa tu almeno<br />
+viver felice e la mia sorte orrenda<br />
+sempre ignorar! Qual gemito!&#8230; una larva&#8230;<br />
+una vision&#8230; No! forma umana è questa&#8230;<br />
+cielo!&#8230; Aida!</p>
+<p>AIDA<br />
+Son io&#8230;</p>
+<p>RADAMÈS<br />
+Tu&#8230; in questa tomba!</p>
+<p>AIDA<br />
+Presago il core della tua condanna,<br />
+in questa tomba che per te s&#8217;apriva<br />
+io penetrai furtiva&#8230;<br />
+e qui lontana da ogni umano sguardo<br />
+nelle tue braccia desiai morire.</p>
+<p>RADAMÈS<br />
+Morir! sì pura e bella!<br />
+Morir per me d&#8217;amore&#8230;<br />
+degli anni tuoi nel fiore<br />
+fuggir la vita!<br />
+T&#8217;avea il cielo per l&#8217;amor creata,<br />
+ed io t&#8217;uccido per averti amata!<br />
+No, non morrai!<br />
+Troppo t&#8217;amai!<br />
+Troppo sei bella!</p>
+<p>AIDA<br />
+<em>(vaneggiando)<br />
+</em>Vedi?&#8230; di morte l&#8217;angelo<br />
+radiante a noi s&#8217;appressa&#8230;<br />
+ne adduce eterni gaudii<br />
+sovra i suoi vanni d&#8217;or.<br />
+Già veggo il ciel dischiudersi&#8230;<br />
+ivi ogni affanno cessa&#8230;<br />
+ivi comincia l&#8217;estasi<br />
+d&#8217;un immortale amor.</p>
+<p><em>Canti e danze delle Sacerdotesse nel tempio.</em></p>
+<p>AIDA<br />
+Triste canto!&#8230;</p>
+<p>RADAMÈS<br />
+Il tripudio<br />
+dei sacerdoti&#8230;</p>
+<p>AIDA<br />
+Il nostro inno di morte&#8230;</p>
+<p>RADAMÈS<br />
+<em>(cercando di smuovere la pietra del sotterraneo)<br />
+</em>Né le mie forti braccia<br />
+smuovere ti potranno, o fatal pietra!</p>
+<p>AIDA<br />
+Invan!&#8230; tutto è finito<br />
+sulla terra per noi.</p>
+<p>RADAMÈS<br />
+<em>(con desolata rassegnazione)<br />
+</em>È vero! È vero!<br />
+<em>(si avvicina ad Aida e la sorregge)</em></p>
+<p>AIDA E RADAMÈS<br />
+O terra, addio; addio, valle di pianti&#8230;<br />
+sogno di gaudio che in dolor svanì&#8230;<br />
+a noi si schiude il cielo e l&#8217;alme erranti<br />
+volano al raggio dell&#8217;eterno dì.<br />
+<em>(Aida cade dolcemente e muore nelle braccia di Radamès)</em></p>
+<p>AMNERIS<br />
+<em>(in abito da lutto apparisce nel tempio e va a prostrarsi sulla pietra che chiude il sotterraneo)<br />
+</em>Pace t&#8217;imploro ~ martire santo&#8230;<br />
+eterno il pianto ~ sarà per me&#8230;</p>
+<p><em>Fine del libretto.<br />
+</em></p>
+
+ </div>
+</main>
+
+
+<!-- ASIDE -->
+ <aside>
+    <div>
+        <h5>Sources</h5>
+        <p><a href="https://www.operalibretto.com/en/home-eng/" target="_blank">Opera Libretto</a></p>
+        <p><a href="https://www.arena.it/" target="_blank">Fondazione Arena</a></p>
+        <p><a href="https://it.wikipedia.org/wiki/Pagina_principale" target="_blank">Wikipedia</a></p>
+    </br>
+        <h5>Ricerche correlate</h5>
+        <p><a href="https://it.wikipedia.org/wiki/Antonio_Ghislanzoni" target="_blank">Antonio Ghislanzoni</a></p>
+        <p><a href="https://it.wikipedia.org/wiki/Teatro_alla_Scala" target="_blank">Teatro alla Scala</a></p>
+        <p><a href="https://it.wikipedia.org/wiki/Giuseppe_Verdi" target="_blank">Giuseppe Verdi</a></p>
+    </div>
+ </aside>
+</div>
+
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="bg-light text-center text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+      <div class="credits">
+          ARENA 101 è un progetto sviluppato per il corso "Digital Humanities" (a.a. 2021/2022) del corso di laurea magistrale in Filologia Classica dell'Università Alma Mater Studiorum di Bologna
+        </div>
+    
+        <small>Designed by Lavinia Bonfatti Sabbioni</small>
+    
+    
+    </div>
+  </div>
+  <div class="text-center p-3 bg-dark text-white">
+    &copy; 2024 Arena 101. La trascrizione dei libretti è stata fatta dall'autrice a partire dai libretti di <a href="https://www.operalibretto.com/en/home-eng/" target="_blank">Opera Libretto</a>. Informazioni di tipo generale (metadati descrittivi) provengono dal sito di <a href="https://www.arena.it/" target="_blank">Fondazione Arena</a>.
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
